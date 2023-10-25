@@ -1,0 +1,22 @@
+stages:
+  - build 
+  - deploy
+
+variables:
+  NODE_ENV: production
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build 
+
+deploy:
+  stage: deploy
+  script:
+    - scp -r ./path/to/your/app
+user@server_ip:/path/to/deployment/folder
+  only:
+    - master 
+  when: manual 
+  
