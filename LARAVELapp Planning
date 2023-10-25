@@ -1,0 +1,11 @@
+Step 1 : Webserver 
+- We need to configure webserver ANY (tomcat/nginx) on any Cloud distribution for Ex amazon EC2 or AZURES VM services
+step 2 : configuring PHP-FPM , Redis , MYSql, Elastic search 
+- need installation of  all this packeges also we have to setup different server for MySQL and chose the databases 
+step 3 : security considerations
+- need to set the proxy / firewalls for the nodes and servers.
+step 4 : monitoring and scaling 
+- we have to configure the tools like Grafana, nagios , ELK stack etc also for scaling we need configure more instances for tranffic management 
+step 6 : backup & recovery
+- need to take regular backups also we have to amke sure the version controlling for an application.
+
